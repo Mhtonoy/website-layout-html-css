@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Created by Mhtonoy</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .flex-container{
+            display: flex;
+            border: 3px solid gold;
+            height: 500px;
+            justify-content: space-around;
+            align-items: flex-end; /* default value is strech */
+            flex-wrap: nowrap;
+            background-color: firebrick;
+        }
+        
+        .box{
+            border: 1px dashed darkviolet;
+            background-color: deeppink;
+        }
+        #heading{
+            order: 0;
+            flex-grow: grow;
+        }
+        #box1{
+            order: 1; 
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="flex-container">
+        <div id="heading" class="box">
+            <h1>We are Flexible</h1>
+        </div>
+        
+        <div id="box1" class="box">
+            <h1>box-1</h1>
+            <p>Lorem ipsum dolor sit</p>
+        </div>
+        <div class="box">
+            <h1>box-2</h1>
+            <p>Ad magnam sint expedita</p>
+        </div>
+        <div class="box">
+            <h1>box-3</h1>
+            <p>Facere iusto esse, ad id tempora est nulla inventore </p>
+       
+    </div>
+</body>
+</html>

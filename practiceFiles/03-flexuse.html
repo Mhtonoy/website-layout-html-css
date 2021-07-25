@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Using Flexbox</title>
+    <script src="https://kit.fontawesome.com/778a123073.js" crossorigin="anonymous"></script>
+    <style>
+       
+        h1{
+            font-size: 3em;
+        }
+        input,button{
+            font-size: 24px;
+            padding: 2px 5px;
+            border: 1px solid rgb(221, 199, 199);
+            border-radius: 10px;
+        }
+        
+        button{
+            width: 13em;
+            background-color: orange;
+            color: white;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">Poduct</a>
+                <a href="">About</a>
+                <a href="">contact</a>
+            </span>
+            <span>
+                <a href=""><i class="far fa-user"></i></a>
+                <a href=""><i class="far fa-bell"></i></a>
+            </span>
+        </nav>
+    </header>
+    <main>
+        <section class="flex-container">
+            <h1>Login Here</h1>
+            <p><input type="email" name="email" id="" placeholder="Enter email" required></p>
+            <p><input type="password" name="password" id="" placeholder="Enter password" required></p>
+            <button type="button">Login</button>
+        </section>
+    </main>
+</body>
+</html>

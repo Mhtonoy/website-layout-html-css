@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout BY Flexbox</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            background-color: dodgerblue;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+        h2{
+           font-size: 3em; 
+           color: tomato;
+        }
+        p{
+            font-size: 1.5em;
+            line-height: 1.4em;
+            text-align: justify;
+        }
+        section{
+            
+        }
+        .flex-container{
+            display: flex;
+            height: auto;
+        }
+        .box{
+            border: 1px solid gainsboro;
+        }
+        #left{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 350%;
+        }
+        #left a{
+            display: block;
+            color: white;
+            font-size: 1.3em;
+            text-align: center;
+            text-decoration: none;
+            background-color: red;
+            border:1px solid white;
+            border-radius: 5px;
+            padding: 0 10px;
+            margin-top: 15px;
+            line-height: 2em;
+        }
+        #right{
+            display: flex;
+            flex-direction: column;
+            padding: 30px 90px;
+            flex-grow: grow;
+        }
+        .links{
+            margin-top: 13em;
+            position: sticky;
+            top: 115px;
+        }
+        
+        @media (max-width: 1000px) {
+            .flex-container{
+                flex-wrap: wrap;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Basic Portfolio Website</h1>
+    </header>
+    <main>
+        <section>
+            <div class="flex-container">
+                <div id="left" class="box">
+                    <div class="links">
+                        <a href="#about">About Me</a>
+                        <a href="#education">Educational Background</a>
+                        <a href="#skill">Skill</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div id="right" class="box">
+                    <article id="about">
+                        <h2>About Me</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro alias veritatis cumque consequatur. Sequi doloremque ratione obcaecati consequuntur odio temporibus, maxime aliquid veniam sunt error praesentium nesciunt in ab voluptas quae dicta tempora placeat autem, dignissimos, cum esse nihil. Quam nesciunt placeat cum voluptas! Nisi illum consequuntur omnis molestiae.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro alias veritatis cumque consequatur. Sequi doloremque ratione obcaecati consequuntur odio temporibus, maxime aliquid veniam sunt error praesentium nesciunt in ab voluptas quae dicta tempora placeat autem, dignissimos, cum esse nihil. Quam nesciunt placeat cum voluptas! Nisi illum consequuntur omnis molestiae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro alias veritatis cumque consequatur. Sequi doloremque ratione obcaecati consequuntur odio temporibus, maxime aliquid veniam sunt error praesentium nesciunt in ab voluptas quae dicta tempora placeat autem, dignissimos, cum esse nihil. Quam nesciunt placeat cum voluptas! Nisi illum consequuntur omnis molestiae.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro alias veritatis cumque consequatur. Sequi doloremque ratione obcaecati consequuntur odio temporibus, maxime aliquid veniam sunt error praesentium nesciunt in ab voluptas quae dicta tempora placeat autem, dignissimos, cum esse nihil. Quam nesciunt placeat cum voluptas! Nisi illum consequuntur omnis molestiae.</p>
+                    </article>
+                    <article>
+                        <h2>Educational Background</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro alias veritatis cumque consequatur. Sequi doloremque ratione obcaecati consequuntur odio temporibus, maxime aliquid veniam sunt error praesentium nesciunt in ab voluptas quae dicta tempora placeat autem, dignissimos, cum esse nihil. Quam nesciunt placeat cum voluptas! Nisi illum consequuntur omnis molestiae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro alias veritatis cumque consequatur. Sequi doloremque ratione obcaecati consequuntur odio temporibus, maxime aliquid veniam sunt error praesentium nesciunt in ab voluptas quae dicta tempora placeat autem, dignissimos, cum esse nihil. Quam nesciunt placeat cum voluptas! Nisi illum consequuntur omnis molestiae.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro alias veritatis cumque consequatur. Sequi doloremque ratione obcaecati consequuntur odio temporibus, maxime aliquid veniam sunt error praesentium nesciunt in ab voluptas quae dicta tempora placeat autem, dignissimos, cum esse nihil. Quam nesciunt placeat cum voluptas! Nisi illum consequuntur omnis molestiae.</p>
+                    </article>
+                    <article>
+                        <h2>Skill</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro alias veritatis cumque consequatur. Sequi doloremque ratione obcaecati consequuntur odio temporibus, maxime aliquid veniam sunt error praesentium nesciunt in ab voluptas quae dicta tempora placeat autem, dignissimos, cum esse nihil. Quam nesciunt placeat cum voluptas! Nisi illum consequuntur omnis molestiae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro alias veritatis cumque consequatur. Sequi doloremque ratione obcaecati consequuntur odio temporibus, maxime aliquid veniam sunt error praesentium nesciunt in ab voluptas quae dicta tempora placeat autem, dignissimos, cum esse nihil. Quam nesciunt placeat cum voluptas! Nisi illum consequuntur omnis molestiae.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro alias veritatis cumque consequatur. Sequi doloremque ratione obcaecati consequuntur odio temporibus, maxime aliquid veniam sunt error praesentium nesciunt in ab voluptas quae dicta tempora placeat autem, dignissimos, cum esse nihil. Quam nesciunt placeat cum voluptas! Nisi illum consequuntur omnis molestiae.</p>
+                    </article>
+                    <article>
+                        <h2>Contact</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro alias veritatis cumque consequatur. Sequi doloremque ratione obcaecati consequuntur odio temporibus, maxime aliquid veniam sunt error praesentium nesciunt in ab voluptas quae dicta tempora placeat autem, dignissimos, cum esse nihil. Quam nesciunt placeat cum voluptas! Nisi illum consequuntur omnis molestiae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro alias veritatis cumque consequatur. Sequi doloremque ratione obcaecati consequuntur odio temporibus, maxime aliquid veniam sunt error praesentium nesciunt in ab voluptas quae dicta tempora placeat autem, dignissimos, cum esse nihil. Quam nesciunt placeat cum voluptas! Nisi illum consequuntur omnis molestiae.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro alias veritatis cumque consequatur. Sequi doloremque ratione obcaecati consequuntur odio temporibus, maxime aliquid veniam sunt error praesentium nesciunt in ab voluptas quae dicta tempora placeat autem, dignissimos, cum esse nihil. Quam nesciunt placeat cum voluptas! Nisi illum consequuntur omnis molestiae.</p>
+                    </article>
+                 
+                    <article  id="contact">
+                        <h2>About Me</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro alias veritatis cumque consequatur. Sequi doloremque ratione obcaecati consequuntur odio temporibus, maxime aliquid veniam sunt error praesentium nesciunt in ab voluptas quae dicta tempora placeat autem, dignissimos, cum esse nihil. Quam nesciunt placeat cum voluptas! Nisi illum consequuntur omnis molestiae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro alias veritatis cumque consequatur. Sequi doloremque ratione obcaecati consequuntur odio temporibus, maxime aliquid veniam sunt error praesentium nesciunt in ab voluptas quae dicta tempora placeat autem, dignissimos, cum esse nihil. Quam nesciunt placeat cum voluptas! Nisi illum consequuntur omnis molestiae.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro alias veritatis cumque consequatur. Sequi doloremque ratione obcaecati consequuntur odio temporibus, maxime aliquid veniam sunt error praesentium nesciunt in ab voluptas quae dicta tempora placeat autem, dignissimos, cum esse nihil. Quam nesciunt placeat cum voluptas! Nisi illum consequuntur omnis molestiae.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
